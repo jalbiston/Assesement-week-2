@@ -1,13 +1,15 @@
-
 //////////////////PROBLEM 1////////////////////
 /*
   Create a function called 'sum' that takes in two parameters, 'num1' and 'num2'. 
   The function should return the sum of the two parameters.
 */
 
-//CODE HERE
+function sum(num1, num2) {
+  return num1 + num2;
+}
 
-
+let answer = sum(5, 4);
+console.log(answer);
 //////////////////PROBLEM 2////////////////////
 /*
   Create a function called 'greaterThanFive' that takes in a single parameter called 'number'. 
@@ -16,8 +18,16 @@
   If it's not, return a false boolean.
 */
 
-//CODE HERE
+function greaterThanFive(number) {
+  if (number > 5) {
+    return "true";
+  } else {
+    return "false";
+  }
+}
 
+let randomNumber = greaterThanFive(100);
+console.log(randomNumber);
 //////////////////PROBLEM 3////////////////////
 /*
   Create a function called 'findZWords' that takes in one parameter, 'word'. 
@@ -26,7 +36,16 @@
   If the name does not begin with Z, return the string: 'the name does not begin with Z'.
 */
 
-//CODE HERE
+function findZWords(word) {
+  if (word.includes("z")) {
+    return "The name begins with Z";
+  } else {
+    return "The name does not begin with Z";
+  }
+}
+
+let nameCheck = findZWords("zach");
+console.log(nameCheck);
 
 //////////////////PROBLEM 4////////////////////
 /*
@@ -35,4 +54,9 @@
   "NAMEPARAM loves LOVEPARAM" with the appropriate parameters in the string. e.g. "Joseph loves music"
 */
 
-//CODE HERE
+function iLove(name, love) {
+  return `${name} loves ${love}`;
+}
+
+let whatLove = iLove("Jake", "Tasha");
+console.log(whatLove);
