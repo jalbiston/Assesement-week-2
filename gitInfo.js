@@ -9,7 +9,8 @@
     It should be a string containing your best definition of what Git is.
 */
 
-//CODE HERE
+let gitDefinition = "A way to navigate files other than a GUI";
+console.log(gitDefinition);
 
 //////////////////PROBLEM 2////////////////////
 /*
@@ -17,7 +18,9 @@
     It should be a string containing your best definition of what GitHub is.
 */
 
-//CODE HERE
+let gitHubDefinition =
+  "Git hub is a website that allows coders to showcase their work and allow for collaboration";
+console.log(gitHubDefinition);
 
 //////////////////PROBLEMS 3 - 8////////////////////
 /*
@@ -33,40 +36,57 @@
     following the guidelines above to describe the init command.
 */
 
-//CODE HERE
-
+let init = {
+  description:
+    "initializes a file to a staging area to get ready to be committed and pushed",
+  code: "git init",
+};
+console.log(init);
 //////////////////PROBLEM 4////////////////////
 /*
     Create an object called 'clone' with 'description' and 'code' properties 
     following the guidelines above to describe the clone command.
 */
 
-//CODE HERE
-
+let clone = {
+  description: "Makes a copy of an existing repository",
+  code: "git clone",
+};
+console.log(clone);
 //////////////////PROBLEM 5////////////////////
 /*
     Create an object called 'status' with 'description' and 'code' properties 
     following the guidelines above to describe the status command.
 */
 
-//CODE HERE
-
+let status = {
+  description:
+    "displays the state of the working directory and the staging area",
+  code: "git status",
+};
+console.log(status);
 //////////////////PROBLEM 6////////////////////
 /*
     Create an object called 'add' with 'description' and 'code' properties 
     following the guidelines above to describe the add command.
 */
 
-//CODE HERE
-
+let add = {
+  description: "basically adds unsaved changes to a repository",
+  code: "git add .",
+};
+console.log(add);
 //////////////////PROBLEM 7////////////////////
 /*
     Create an object called 'commit' with 'description' and 'code' properties
     following the guidelines above to describe the commit command.
 */
 
-//CODE HERE
-
+let commit = {
+  description: "saves file to local repository",
+  code: " git commit -m message(with quotation marks)",
+};
+console.log(commit);
 
 //////////////////PROBLEM 8////////////////////
 /*
@@ -74,4 +94,8 @@
     following the guidelines above to describe the push command.
 */
 
-//CODE HERE
+let push = {
+  description: "Pushes the file to your remote repository",
+  code: "git push",
+};
+console.log(push);
