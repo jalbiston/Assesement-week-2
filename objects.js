@@ -1,4 +1,3 @@
-
 //////////////////PROBLEM 1////////////////////
 /*
   Create an object called 'me' that has the following keys: 
@@ -14,11 +13,21 @@
   For example: 'Hello! My name is Rubber Duck and I live in Utah"
 */
 
-//CODE HERE
+
+// I honestly could not figure this one out and it took waaaaay too long but i got problem 2
+
+// let me = {
+//   firstName: "Jake",
+//   state: "Utah"
+//   age: 30
+
+// greeter() {
+  
+// }
+// }
 
 
-
-
+// console.log(me)
 
 //////////////////PROBLEM 2////////////////////
 /*
@@ -44,4 +53,19 @@
   }
 */
 
-//CODE HERE
+function carFactory(make, model, year) {
+  let car = {
+    make: `${make}`,
+    model: `${model}`,
+    year: `${year}`,
+  };
+  if (year > 2018) {
+    car.isNew = true;
+  } else {
+    car.isNew = false;
+  }
+  return car;
+}
+
+let test = carFactory("hyundai", "elantra", 2016);
+console.log(test);

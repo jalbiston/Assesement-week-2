@@ -60,8 +60,7 @@ console.log(clone);
 */
 
 let status = {
-  description:
-    "displays the state of the working directory and the staging area",
+  description: "displays the state of the working directory and the staging area",
   code: "git status",
 };
 console.log(status);
