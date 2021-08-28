@@ -13,20 +13,18 @@
   For example: 'Hello! My name is Rubber Duck and I live in Utah"
 */
 
-
 // I honestly could not figure this one out and it took waaaaay too long but i got problem 2
 
-// let me = {
-//   firstName: "Jake",
-//   state: "Utah"
-//   age: 30
+let me = {
+  firstName: "Jake",
+  state: "Utah",
+  age: 30,
+  greeter: function () {
+    return `Hello, my name is ${me.firstName} and i live in ${me.state}`;
+  },
+};
 
-// greeter() {
-  
-// }
-// }
-
-
+console.log(me.greeter());
 // console.log(me)
 
 //////////////////PROBLEM 2////////////////////
@@ -67,5 +65,5 @@ function carFactory(make, model, year) {
   return car;
 }
 
-let test = carFactory("hyundai", "elantra", 2016);
+let test = carFactory("hyundai", "elantra", 2020);
 console.log(test);

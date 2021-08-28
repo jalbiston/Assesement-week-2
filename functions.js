@@ -37,7 +37,7 @@ console.log(randomNumber);
 */
 
 function findZWords(word) {
-  if (word.includes("z")) {
+  if (word.startsWith("z")) {
     return "The name begins with Z";
   } else {
     return "The name does not begin with Z";
